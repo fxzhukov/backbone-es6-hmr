@@ -1,0 +1,115 @@
+body{
+    margin: 0 0;
+}
+
+a{
+    color: #990000;
+    text-decoration: underline;
+}
+a:hover{
+    text-decoration: none;
+}
+
+#tabsection{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top:30px;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    height: 300px;
+}
+/**
+* TAB stylings
+ */
+.tabsection {
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 600px;
+}
+.nav {
+    position: relative;
+    z-index: 1;
+}
+.nav ul {
+    margin: 0;
+}
+.nav ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav li {
+    float: left;
+    width: 140px;
+    margin-bottom: -1px;
+    list-style-type: none;
+}
+.nav a {
+    display: block;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background-color: #ccc;
+    margin-right: 10px;
+    padding: .5em 1em;
+    color: #333;
+    text-decoration: none;
+}
+.nav a.active {
+    background-color: #fff;
+}
+.contents {
+    position: relative;
+    z-index: 0;
+    border: 1px solid #ccc;
+}
+.section {
+    padding: 50px 100px;
+    line-height: 1.5;
+}
+
+/**
+*Popup button styling
+ */
+button.modalButton{
+    float:right;
+}
+
+
+
+/**
+*Popup window styling
+ */
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:10;
+    visibility: hidden;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+a.closer{
+    display: inline-block;
+    margin-left:180px;
+    margin-bottom: 10px;
+}
